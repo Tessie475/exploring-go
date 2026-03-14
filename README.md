@@ -1,4 +1,4 @@
-# Eberechi Go Toolkit
+# Exploring Go
 
 This repository is a collection of small Go programs I’ve built while learning the language more deeply through hands-on problem solving.
 
