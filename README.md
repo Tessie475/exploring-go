@@ -27,6 +27,19 @@ A concurrent CLI tool that checks whether a list of URLs is reachable, resolves 
 - DNS lookups
 - URL parsing
 
+### Config File Validator
+A CLI utility that reads and validates YAML/JSON configuration files before deployment, catching syntax errors and invalid values early.
+
+**Concepts explored:**
+- file I/O (`os.ReadFile`)
+- JSON parsing (`encoding/json`)
+- YAML parsing (`gopkg.in/yaml.v3`)
+- struct tags for field mapping
+- nested structs
+- custom validation logic
+- error wrapping (`fmt.Errorf` with `%w`)
+- working with third-party packages
+
 ## What I’m focusing on
 Most of the projects in this repository are centered around:
 - concurrency
