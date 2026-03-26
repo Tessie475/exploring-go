@@ -1,0 +1,12 @@
+name: payment-service
+image: example/payment-service:v1.2.0
+port: 80
+
+env:
+  - APP_ENV=dev
+  - payment_processor_name=example-processor
+
+database:
+  host: db.dev.internal
+  port: 1234
+  name: payments_db

@@ -1,0 +1,5 @@
+{
+    "name": "payment-service",
+    "image": "example/payment-service:v1.2.0"
+    "port": 80
+}

@@ -1,0 +1,11 @@
+name: ""
+image: ""
+port: 99999
+
+env:
+  - APP_ENV=dev
+
+database:
+  host: ""
+  port: 0
+  name: ""
