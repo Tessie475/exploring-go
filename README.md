@@ -1,8 +1,8 @@
 # Exploring Go
 
-This repository is a collection of small Go programs I’ve built while learning the language more deeply through hands-on problem solving.
+This repository is a collection of small Go programs I've built while learning the language more deeply through hands-on problem solving.
 
-Rather than treating Go as a purely academic exercise, I’m using this space to explore how it can be applied to real engineering tasks such as networking, concurrency, HTTP communication, and command-line tooling.
+Rather than treating Go as a purely academic exercise, I'm using this space to explore how it can be applied to real engineering tasks such as networking, concurrency, HTTP communication, and command-line tooling.
 
 A lot of these projects are intentionally small, but each one helps me understand an important Go concept by building something practical.
 
@@ -40,7 +40,18 @@ A CLI utility that reads and validates YAML/JSON configuration files before depl
 - error wrapping (`fmt.Errorf` with `%w`)
 - working with third-party packages
 
-## What I’m focusing on
+### System Metrics API
+An HTTP server that exposes real-time system metrics (CPU, memory, disk) as JSON endpoints, with a live HTML dashboard that auto-refreshes.
+
+**Concepts explored:**
+- HTTP server (`net/http`, `http.HandleFunc`, `http.ListenAndServe`)
+- JSON API responses (`json.NewEncoder`)
+- HTML templating (`html/template`)
+- system metrics collection (`gopsutil`)
+- struct composition
+- route registration
+
+## What I'm focusing on
 Most of the projects in this repository are centered around:
 - concurrency
 - networking
