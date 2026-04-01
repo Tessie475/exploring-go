@@ -1,0 +1,11 @@
+apiVersion: apps.example.com/v1alpha1
+kind: AppService
+metadata:
+  labels:
+    app.kubernetes.io/name: appservice-operator
+    app.kubernetes.io/managed-by: kustomize
+  name: my-app
+spec:
+  image: httpd:latest
+  replicas: 5
+  port: 80
