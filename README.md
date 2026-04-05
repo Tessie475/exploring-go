@@ -51,11 +51,37 @@ An HTTP server that exposes real-time system metrics (CPU, memory, disk) as JSON
 - struct composition
 - route registration
 
+### AppService Operator
+A Kubernetes operator that manages a custom `AppService` resource. When an AppService is created, the operator automatically provisions a Deployment and Service for it.
+
+**Concepts explored:**
+- Custom Resource Definitions (CRDs)
+- controller reconciliation loop (watch → detect → act)
+- Kubebuilder scaffolding and code generation
+- `controller-runtime` and `client-go`
+- owner references for automatic cleanup
+- spec vs status pattern
+- RBAC markers
+- admission webhooks (mutating and validating)
+- TLS certificates with cert-manager
+- deploying operators to a cluster
+
+### Resource Watcher
+A standalone Kubernetes controller that uses `client-go` informers to watch Pods in real-time, detecting crashes, bad image tags, and state changes.
+
+**Concepts explored:**
+- `client-go` directly (without Kubebuilder)
+- Kubernetes informers and watch mechanisms
+- Event-driven programming with work queues
+- Kubeconfig loading and authentication
+- Graceful shutdown and signal handling
+
 ## What I'm focusing on
 Most of the projects in this repository are centered around:
 - concurrency
 - networking
 - CLI applications
+- Kubernetes development
 - backend/system-style problem solving
 
 ## Notes
